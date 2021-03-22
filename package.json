@@ -15,7 +15,9 @@
   ],
   "author": "Hristo Gatsinski",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "pixi.js": "^6.0.0"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "^8.0.0",
     "html-webpack-plugin": "^5.3.1",
