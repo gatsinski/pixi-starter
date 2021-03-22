@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "linter-check": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "linter-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "keywords": [
     "pixi",
@@ -19,7 +21,10 @@
     "pixi.js": "^6.0.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
     "copy-webpack-plugin": "^8.0.0",
+    "eslint": "^7.22.0",
     "html-webpack-plugin": "^5.3.1",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
