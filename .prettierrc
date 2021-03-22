@@ -1,0 +1,17 @@
+{
+  "overrides": [
+    {
+      "files": [
+        ".prettierrc",
+        ".eslintrc",
+        "tsconfig.json",
+        "package.json",
+        "package-lock.json",
+        "webpack.*.js"
+      ],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
