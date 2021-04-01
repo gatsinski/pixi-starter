@@ -1,16 +1,20 @@
-import * as PIXI from "pixi.js";
+import "reflect-metadata";
 
-const app = new PIXI.Application({ width: 256, height: 256 });
+import * as PIXI from "pixi.js";
+import { Container } from "typedi";
+
+import { Main } from "./components/Main";
+
+const app = new PIXI.Application({ width: 1280, height: 768 });
 
 document.body.appendChild(app.view);
 
 const loader = PIXI.Loader.shared;
 
-loader.add("assets/contuga-logo.png").load(setup);
+loader.add("assets/white-square.jpg").load(setup);
 
 function setup() {
-    const texture = PIXI.utils.TextureCache["assets/white-square.jpg"];
-    const sprite = new PIXI.Sprite(texture);
+    const main = Container.get(Main);
 
-    app.stage.addChild(sprite);
+    main.init(app);
 }

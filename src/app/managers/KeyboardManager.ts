@@ -1,3 +1,6 @@
+import { Service } from "typedi";
+
+@Service()
 export default class KeyboardManager {
     static readonly DOWN_EVENT = "down";
     static readonly UP_EVENT = "up";

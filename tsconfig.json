@@ -3,6 +3,8 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "moduleResolution": "node",
     "module": "es6",
     "target": "es5",
