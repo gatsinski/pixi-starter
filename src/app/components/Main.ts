@@ -1,21 +1,22 @@
-import { Service, Inject } from "typedi";
+import { Service } from "typedi";
 import * as PIXI from "pixi.js";
 
 import KeyboardManager from "../managers/KeyboardManager";
+import Application from "../Application";
 
 @Service()
 export class Main {
-    @Inject()
-    private keyboardManager: KeyboardManager;
-
     private sprite: PIXI.Sprite;
 
-    public init(app: PIXI.Application): void {
+    constructor(
+        private app: Application,
+        private keyboardManager: KeyboardManager
+    ) {
         const texture = PIXI.utils.TextureCache["assets/white-square.jpg"];
 
         this.sprite = new PIXI.Sprite(texture);
 
-        app.stage.addChild(this.sprite);
+        this.app.stage.addChild(this.sprite);
 
         this.addKeyboardEvents();
     }
