@@ -1,4 +1,5 @@
 const { merge } = require("webpack-merge");
+const webpack = require("webpack");
 const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
@@ -8,4 +9,9 @@ module.exports = merge(common, {
     contentBase: "./dist",
     hot: true,
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      PIXI: "pixi.js",
+    }),
+  ],
 });
