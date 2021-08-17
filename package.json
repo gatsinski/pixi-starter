@@ -10,7 +10,8 @@
     "linter-check": "eslint . --ext .js,.jsx,.ts,.tsx",
     "linter-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "formatter-check": "prettier . --check",
-    "formatter-fix": "prettier . --write"
+    "formatter-fix": "prettier . --write",
+    "prepare": "husky install"
   },
   "keywords": [
     "pixi",
@@ -31,6 +32,7 @@
     "copy-webpack-plugin": "^8.1.1",
     "eslint": "^7.32.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.0",
     "prettier": "2.2.1",
     "ts-loader": "^8.3.0",
     "typescript": "^4.5.2",
