@@ -10,7 +10,12 @@ import { Main } from "./components/Main";
 
 const loader = PIXI.Loader.shared;
 
-loader.add("assets/white-square.jpg").load(setup);
+loader
+    .add("assets/white-square.jpg")
+    .add("assets/red-square.jpg")
+    .add("assets/green-square.jpg")
+    .add("assets/blue-square.jpg")
+    .load(setup);
 
 function setup() {
     Container.get(Main);
