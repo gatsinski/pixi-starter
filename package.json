@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@pixi/layers": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "copy-webpack-plugin": "^8.1.1",
