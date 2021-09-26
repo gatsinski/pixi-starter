@@ -1,7 +1,7 @@
 import { Service } from "typedi";
 import { Layer } from "@pixi/layers";
 
-import Application from "../Application";
+import Application from "app/Application";
 
 @Service()
 export default class LayerManager {

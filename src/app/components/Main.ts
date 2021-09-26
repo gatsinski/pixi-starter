@@ -1,9 +1,9 @@
 import { Service } from "typedi";
 import * as PIXI from "pixi.js";
 
-import KeyboardManager from "../managers/KeyboardManager";
-import Application from "../Application";
-import LayerManager from "../managers/LayerManager";
+import Application from "app/Application";
+import KeyboardManager from "managers/KeyboardManager";
+import LayerManager from "managers/LayerManager";
 
 @Service()
 export class Main {

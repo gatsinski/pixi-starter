@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "app/*": ["src/app/*"],
+      "components/*": ["src/app/components/*"],
+      "managers/*": ["src/app/managers/*"]
+    },
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
